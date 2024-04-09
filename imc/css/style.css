@@ -1,0 +1,25 @@
+.calculadora{
+    height: 600px;
+    width: 400px;
+    background-color: rgb(255, 200, 0);
+    border-radius: 20px;
+    box-shadow: 1px 2px 4px black;
+    text-align: center;
+}
+.calculadora h1{
+    margin: 0;
+}
+hr {
+    height: 3px;
+    background-color: black;
+}
+.nome, .altura, .peso {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.nome label, .altura label, .peso label {
+font-size: 15px;
+justify-content: ;
+}

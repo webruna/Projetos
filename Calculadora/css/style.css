@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*elementos nao ultrapassar elemento pai*/
+    font-family: Helvetica;
+}
+body {
+    background-color: rgb(48, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+#calc {
+    width: 400px;
+    padding: .5em;
+    background-color: rgb(204, 204, 204);
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+#calc h3{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: gray;
+}
+#opera {
+    text-align: right;
+}
+#op-atual {
+    font-size: 3em;
+    font-weight: 700;
+}
+#op-atual, #op-ant {
+    min-height: 1.6em;
+    padding: .2em;
+    overflow-wrap: break-word; /*quebra linha, deixa dentro da div*/
+}
+#botoes {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr; /*separa em 4 frações de colunas*/
+gap: 3px; /*espaçamento entre os botoes*/
+}
+#botoes button{
+border: 1px solid transparent;
+border-radius: 0;
+height: 4em;
+font-size: 1.2em;
+background-color: rgb(225, 225, 225);
+cursor: pointer;
+}
+#botoes .num {
+    background-color: rgb(249, 255, 255);
+}
+#botoes button:hover {
+    background-color: rgb(228, 228, 228);
+    border-color: #999;
+}
+#botoes #igual {
+    grid-column: span 2; /*botao ocupando 2 colunas*/
+    background-color: rgba(46, 156, 223, 0.763);
+}
+#botoes #igual:hover {
+    background-color: rgb(0, 157, 255);
+}
